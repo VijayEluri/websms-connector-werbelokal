@@ -18,7 +18,7 @@
         --> 
 <resources>
 	<string name="app_name">WebSMS Connector: Werbelokal</string>
-	<string name="app_version">1</string>
+	<string name="app_version">1.0</string>
 	<string name="connector_connector_author">Felix Bechstein &lt;f@ub0r.de&gt;</string>
 	<string name="connector_connector_name">Werbelokal</string>
 	<string name="connector_connector_preferences">Preferences - Werbelokal</string>
