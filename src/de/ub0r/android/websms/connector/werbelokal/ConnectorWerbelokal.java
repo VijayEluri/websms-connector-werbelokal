@@ -47,10 +47,10 @@ public final class ConnectorWerbelokal extends BasicConnector {
 
 	/** CherrySMS Gateway URL - send. */
 	private static final String URL_SEND = // .
-	"http://www.werbelokal.de/websmsdroid.html";
+	"https://www.werbelokal.de/websmsdroid.html";
 	/** CherrySMS Gateway URL - check. */
 	private static final String URL_CHECK = // .
-	"http://www.werbelokal.de/websmsdroid_konto.html";
+	"https://www.werbelokal.de/websmsdroid_konto.html";
 
 	/**
 	 * {@inheritDoc}
@@ -91,6 +91,14 @@ public final class ConnectorWerbelokal extends BasicConnector {
 			connectorSpec.setStatus(ConnectorSpec.STATUS_INACTIVE);
 		}
 		return connectorSpec;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	protected boolean trustAllSLLCerts() {
+		return true;
 	}
 
 	/**
