@@ -220,7 +220,7 @@ public final class ConnectorWerbelokal extends BasicConnector {
 	@Override
 	protected void parseResponse(final Context context,
 			final ConnectorCommand command, final ConnectorSpec cs,
-			final String htmlText) throws WebSMSException {
+			final String htmlText) {
 		if (htmlText == null || htmlText.length() == 0) {
 			throw new WebSMSException(context, R.string.error_service);
 		}
